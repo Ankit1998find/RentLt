@@ -76,6 +76,23 @@ body{
    bottom:8px;
 }
 
+
+
+.mobile-navbar .btn{
+    background: var(--primary);
+    border-radius: 10px;
+    height: 50px;
+    padding-inline: 29px;
+    
+}
+
+.mobile-navbar .btn span{
+   position: relative;
+   top:5px;
+}
+
+
+
 .carousel-inner img{
     width: auto;
     height: 90vh;
@@ -473,5 +490,74 @@ body{
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    .nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 10px 25px;
+    }
+
+    .mobile-nav li{
+        list-style: none;
+       
+    }
+
+    .mobile-nav li a{
+        text-decoration: none;
+       
+    }
+
+    .mobile-nav-menu{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        margin-left: 300px;
+        display: none;
+        
+    }
+
+    .open-menu{
+        margin: 0;
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        transition: height 0.6s ease;
+    }
+
+   
+
+
+    .mobile-navbar li{
+        list-style: none;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 7px 0px;
+    }
+
+    .mobile-navbar  a{
+        text-decoration: none;
+       
+    }
+
+    .rent{
+       color: var(--dark);
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+     }
+  }
+
+  
+
+  @media screen and (min-width:768px){
+    .mobile-nav,.mobile-nav-menu {
+        display: none;
     }
   }
