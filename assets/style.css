@@ -557,6 +557,7 @@ body{
         padding: 0;
         margin: 0;
         padding:0 30px;
+        max-width: fit-content !important;
         overflow: hidden;
     }
   }
