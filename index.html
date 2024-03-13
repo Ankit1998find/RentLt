@@ -28,7 +28,7 @@
               <a href="about.html"><li>About</li></a>
               <a href="services.html"><li>Services</li></a>
               <a href="contact.html"><li>Contact</li></a>
-              <a href="#" class="btn"><span>Register</span></a>
+              <a href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span>Register</span></a>
              </ul>
         </nav>
 
@@ -48,7 +48,8 @@
           <a href="about.html"><li>About</li></a>
           <a href="services.html"><li>Services</li></a>
           <a href="contact.html"><li>Contact</li></a>
-          <a href="#" class="btn"><span>Register</span></a>
+          <a href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span>Register</span></a>
+        
          </ul>
     </nav>
 
@@ -67,14 +68,14 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
                     <img src="assets/images/carousel-1.jpg" class="d-block w-100" alt="best rental room in delhi">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption  d-md-block">
                       <h5>Hassle-Free Room Shifting</h5>
                       <p>Effortlessly shift to your new room with our seamless relocation service.</p>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="assets/images/carousel-2.jpg" class="d-block w-100" alt="best rental properties">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption  d-md-block">
                       <h5>Find Your Perfect Room, Without Leaving Home</h5>
                       <p class="second-item">Rent your ideal room from the comfort of your home with our virtual viewing experience.</p>
                     </div>
@@ -234,6 +235,51 @@
 
             </section>
 
+     <!-- modal open  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Register for next process</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="recipient-name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="recipient-email" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Phone:</label>
+            <input type="text" class="form-control" id="recipient-name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Do Message:</label>
+            <textarea class="form-control" id="message-text" placeholder="Send the location details, You are looking for a flat."></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="msgbtn">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- model close -->
+
+
+
+
            <section class="mt-4">
             <div class="container">
               <h2 class="text-center text-capitalize">We Provide 360<sup>o</sup> virtual tour rental room</h2>
@@ -270,11 +316,11 @@
           </a></li>
       </ul>
       <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Register</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
   
       </ul>
       <p>&copy;2024 RentLT | All Rights Reserved</p>
