@@ -535,7 +535,7 @@ body{
     }
 
     .open-menu{
-        margin: 0;
+        margin: 49px 6px;
         display: block;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 20px;
