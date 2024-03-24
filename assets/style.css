@@ -597,7 +597,7 @@ body{
   .carousel-caption .second-item {
     color: var(--white);
     background: none !important;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300px;
     z-index: 10;
     position: absolute;
