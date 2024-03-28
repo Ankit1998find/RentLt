@@ -30,6 +30,7 @@ body{
 .homebutton{
      color: var(--white);
      font-size:15px;
+     font-weight:400;
 }
 
 .nav{
