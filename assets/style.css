@@ -27,6 +27,11 @@ body{
     padding-inline: 26px;
 }
 
+.homebutton{
+     color: var(--white);
+     font-size:15px;
+}
+
 .nav{
     display: flex;
     align-items: center;
