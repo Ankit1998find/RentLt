@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', async function(event) {
+document.getElementById('contact-form1').addEventListener('submit', async function(event) {
     event.preventDefault();
     
     const formData = new FormData(this);
@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
     if (response.ok) {
         alert('Message sent successfully! Our Team will contact with you soon');
-        document.getElementById('contactForm').reset();
+        document.getElementById('contact-form1').reset();
     } else {
         alert('Failed to send message.');
     }
