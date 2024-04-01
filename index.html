@@ -1,390 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <meta name="google-site-verification" content="33FZgUjBuWqnVVUi7Js63qU4_JTYYu8JpAdMacBsIIM" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <meta
+      name="google-site-verification"
+      content="33FZgUjBuWqnVVUi7Js63qU4_JTYYu8JpAdMacBsIIM"
+    />
     <title>360 degree virtual house tour | rentlt</title>
-   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-   <link rel="icon" type="image/x-icon" sizes="32x32" href="assets/images/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-   <link rel="manifest" href="assets/images/site.webmanifest">
-    <meta property="og:site_name" content="rentlt">
-    <meta name="description" content="Discover your next home with virtual tours of rental house! rentlt offers an immersive experience with 360-degree views. Rent now with rentlt!">
-    <link rel="canonical" href="https://rentlt.vercel.app/"/>
-   </head>
-<body>
- <div class="header-wrapper">
-    <header>
-        <nav class="nav  fixed-top">
-              <a href="index.html"><span class="rent">Rent</span> <span class="lt"><sup>LT</sup></span> </a>
-              <ul class="navbar">
-              <a href="index.html"><li>Home</li></a>
-              <a href="about.html"><li>About</li></a>
-              <a href="services.html"><li>Services</li></a>
-              <a href="contact.html"><li>Contact</li></a>
-              <a href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span>Register</span></a>
-             </ul>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <meta property="og:site_name" content="rentlt" />
+    <meta
+      name="description"
+      content="Discover your next home with virtual tours of rental house! rentlt offers an immersive experience with 360-degree views. Rent now with rentlt!"
+    />
+    <link rel="canonical" href="https://rentlt.vercel.app/" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header>
+        <nav class="nav fixed-top">
+          <a href="index.html"
+            ><span class="rent">Rent</span>
+            <span class="lt"><sup>LT</sup></span>
+          </a>
+          <ul class="navbar">
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="services.html">
+              <li>Services</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+            <a
+              href="#"
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"
+              ><span>Register</span></a
+            >
+          </ul>
         </nav>
+        <!-- mobile navigation -->
+        <ul class="mobile-nav fixed-top">
+          <li>
+            <a href="index.html"
+              ><span class="rent">Rent</span>
+              <span class="lt"><sup>LT</sup></span>
+            </a>
+          </li>
+          <li id="changeClassButton" class="btn">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
 
-         <!-- mobile navigation -->
-         <ul class="mobile-nav fixed-top">
-          <li><a href="index.html"><span class="rent">Rent</span> <span class="lt"><sup>LT</sup></span> </a></li>
-          <li id="changeClassButton" class="btn"><i class="fa-solid fa-bars"></i></li>
-         </ul>
-
-         <nav class="mobile-nav-menu  py-2">
+        <nav class="mobile-nav-menu py-2">
           <div class="d-flex align-item-center justify-content-between">
             <div></div>
-             <div class="px-4 py-2" id="closeClassButton"><i class="fa-regular fa-circle-xmark text-right"></i></div>
+            <div class="px-4 py-2" id="closeClassButton">
+              <i class="fa-regular fa-circle-xmark text-right"></i>
+            </div>
           </div>
           <ul class="mobile-navbar text-center">
-          <a href="index.html"><li>Home</li></a>
-          <a href="about.html"><li>About</li></a>
-          <a href="services.html"><li>Services</li></a>
-          <a href="contact.html"><li>Contact</li></a>
-          <a href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span>Register</span></a>
-        
-         </ul>
-    </nav>
-
-
-        
-    </header>
-
-    <main>
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="services.html">
+              <li>Services</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+            <a
+              href="#"
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"
+              ><span>Register</span></a
+            >
+          </ul>
+        </nav>
+      </header>
+      <main>
         <section class="hero-section">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                 
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/images/carousel-1.jpg" class="d-block w-100" alt="luxury apartment virtual tour">
-                    <div class="carousel-caption  d-md-block">
-                      <h3>Hassle-Free Room Shifting</h3>
-                      <p>Effortlessly shift to your new room with our seamless relocation service.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/images/carousel-2.jpg" class="d-block w-100" alt="virtual house tour for rent in delhi">
-                    <div class="carousel-caption  d-md-block">
-                      <h4>Find Your Perfect Room, Without Leaving Home</h4>
-                      <p class="second-item">Rent your ideal room from the comfort of your home with our virtual viewing experience.</p>
-                    </div>
-                  </div>
-                 
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </section>
-
-            <section class="provide">
-              <div class="container">
-               <div class="text-center mt-5 mb-1"><a href="#" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><span class="homebutton">Register For Virtual Tour</span></a></div>
-                <h1 class="text-center text-capitalize mt-5">Virtual Tour Rental Room Shifting Process</h1>
-                <div class="row">
-                  <div class="col-md-6">
-                    <aside class="side-image mt-3">
-                      <img src="assets/images/about.jpg" class="img-fluid" alt="virtual tour flat in gurgoan">
-                    </aside>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Customer Registration
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Allow customers to create an account on your platform. Gather basic information like name, email, and contact details.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Room Listings
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Provide a list of available rooms for rent. Include details like location, size, amenities, and rental price</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Room Selection
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Allow customers to browse through the available rooms and select the ones they are interested in.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            Virtual Tour
-                          </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Offer a virtual tour of the rooms using video conferencing tools. This helps customers get a better sense of the space.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFive">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                            Booking
-                          </button>
-                        </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Once a customer decides on a room, allow them to book it through your platform. Collect necessary details like move-in date, duration of stay, and payment information.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingSix">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            Payment Processing
-                          </button>
-                        </h2>
-                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Process the rental payment securely through your platform. Provide multiple payment options for customer convenience.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingSeven">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                            Room Shifting
-                          </button>
-                        </h2>
-                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">If the customer likes the property after the virtual tour, provide options for arranging room shifting, including assistance with moving their belongings.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingEight">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                            Agreement
-                          </button>
-                        </h2>
-                        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Provide a rental agreement or contract outlining the terms and conditions of the rental. Ensure both parties understand and agree to the terms before finalizing the rental.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingNine">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                            Confirmation
-                          </button>
-                        </h2>
-                        <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Confirm the booking details with the customer, including move-in date, rental price, and any additional services included.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTen">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                            Customer Support:
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Offer ongoing customer support to address any questions or concerns the customer may have before, during, or after their stay.</div>
-                        </div>
-                      </div>
-
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-heading12">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
-                            Feedback
-                          </button>
-                        </h2>
-                        <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Collect feedback from customers to improve your services and offerings in the future.</div>
-                        </div>
-                      </div>
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-heading12">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
-                            Maintenance and Support
-                          </button>
-                        </h2>
-                        <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Provide maintenance and support services during the customer's stay to ensure their comfort and satisfaction.</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-            </section>
-
-     <!-- modal open  -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">Register for next process</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
- <form id="contactForm">
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="name" name="name"  required>
-          </div>
-
-          <div class="mb-3">
-            <label for="recipient-email" class="col-form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-          </div>
-
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Phone:</label>
-            <input type="text" class="form-control" id="phone" name="phone" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Do Message:</label>
-            <textarea class="form-control" id="message" name="message" required placeholder="Send the location details, You are looking for a flat."></textarea>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="msgbtn">Register</button>
-          </div>
-        </form>
-      </div>
-     
-    </div>
-  </div>
-</div>
-           <section class="mt-4">
-            <div class="container">
-              <h2 class="text-center text-capitalize">We Provide 360<sup>o</sup> virtual tour rental room</h2>
-               <p class="text-center text-capitalize"><strong>Experience the Future of Room Rental with Our 360° Virtual Tours in India</strong></p><br>
-               <p>Immerse yourself in the future of room rental with our innovative 360° virtual tours in India. At rentlt, we're revolutionizing the way you explore and choose your next rental space. Our cutting-edge technology allows you to virtually step into each room, giving you a true-to-life experience from the comfort of your home.</p><br>
-               <p>With our 360° virtual tours, you can explore every corner of the room, getting a detailed view of the layout, size, and amenities. Whether you're looking for a cozy studio apartment or a spacious family home, our virtual tours provide an immersive experience that helps you make an informed decision.</p><br>
-               <p>Forget about traditional property viewings that require you to travel to each location. With our virtual tours, you can browse through multiple properties in different locations without leaving your couch. Save time and effort while finding the perfect room for your needs.</p><br>
-               <p>Our platform offers a user-friendly interface that makes navigating through virtual tours easy and intuitive. Simply select a property, start the virtual tour, and explore at your own pace. Zoom in to see details up close, move around to get a feel of the space, and experience each room as if you were there in person.</p><br>
-               <p>At rentlt, we're committed to providing you with a seamless and convenient room rental experience. Our 360° virtual tours in India are just one of the many ways we're making room rental easier and more accessible. Explore our virtual tours today and find your next rental room with ease.</p>
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
             </div>
-           </section>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="assets/images/carousel-1.jpg"
+                  class="d-block w-100"
+                  alt="luxury apartment virtual tour"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h3>Hassle-Free Room Shifting</h3>
+                  <p>
+                    Effortlessly shift to your new room with our seamless
+                    relocation service.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="assets/images/carousel-2.jpg"
+                  class="d-block w-100"
+                  alt="virtual house tour for rent in delhi"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h4>Find Your Perfect Room, Without Leaving Home</h4>
+                  <p class="second-item">
+                    Rent your ideal room from the comfort of your home with our
+                    virtual viewing experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="provide">
+          <div class="container">
+            <div class="text-center mt-5 mb-1">
+              <a
+                href="#"
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+                ><span class="homebutton">Register For Virtual Tour</span></a
+              >
+            </div>
+            <h1 class="text-center text-capitalize mt-5">
+              Virtual Tour Rental Room Shifting Process
+            </h1>
+            <div class="row">
+              <div class="col-md-6">
+                <aside class="side-image mt-3">
+                  <img
+                    src="assets/images/about.jpg"
+                    class="img-fluid"
+                    alt="virtual tour flat in gurgoan"
+                  />
+                </aside>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Customer Registration
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Allow customers to create an account on your platform.
+                        Gather basic information like name, email, and contact
+                        details.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Room Listings
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Provide a list of available rooms for rent. Include
+                        details like location, size, amenities, and rental price
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Room Selection
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Allow customers to browse through the available rooms
+                        and select the ones they are interested in.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Virtual Tour
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Offer a virtual tour of the rooms using video
+                        conferencing tools. This helps customers get a better
+                        sense of the space.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        Booking
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFive"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Once a customer decides on a room, allow them to book it
+                        through your platform. Collect necessary details like
+                        move-in date, duration of stay, and payment information.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        Payment Processing
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSix"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Process the rental payment securely through your
+                        platform. Provide multiple payment options for customer
+                        convenience.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSeven"
+                      >
+                        Room Shifting
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSeven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSeven"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        If the customer likes the property after the virtual
+                        tour, provide options for arranging room shifting,
+                        including assistance with moving their belongings.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEight"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseEight"
+                      >
+                        Agreement
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseEight"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingEight"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Provide a rental agreement or contract outlining the
+                        terms and conditions of the rental. Ensure both parties
+                        understand and agree to the terms before finalizing the
+                        rental.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseNine"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseNine"
+                      >
+                        Confirmation
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseNine"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingNine"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Confirm the booking details with the customer, including
+                        move-in date, rental price, and any additional services
+                        included.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTen">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTen"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTen"
+                      >
+                        Customer Support:
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTen"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTen"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Offer ongoing customer support to address any questions
+                        or concerns the customer may have before, during, or
+                        after their stay.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading12">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse12"
+                        aria-expanded="false"
+                        aria-controls="flush-collapse12"
+                      >
+                        Feedback
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapse12"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-heading12"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Collect feedback from customers to improve your services
+                        and offerings in the future.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading12">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse12"
+                        aria-expanded="false"
+                        aria-controls="flush-collapse12"
+                      >
+                        Maintenance and Support
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapse12"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-heading12"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Provide maintenance and support services during the
+                        customer's stay to ensure their comfort and
+                        satisfaction.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- modal open  -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLabel">
+                  Register for next process
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"
+                      >Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
 
-    </main>
+                  <div class="mb-3">
+                    <label for="recipient-email" class="col-form-label"
+                      >Email:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                    />
+                  </div>
 
-    <footer class="footer mt-5">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
-      <ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a></li>
-      </ul>
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Register</a></li>
-        <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-  
-      </ul>
-      <p>&copy;2024 rentlt | All Rights Reserved</p>
-    </footer>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"
+                      >Phone:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                  </div>
 
- </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Do Message:</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      required
+                      placeholder="Send the location details, You are looking for a flat."
+                    ></textarea>
+                  </div>
 
-<script>
-  document.getElementById('contactForm').addEventListener('submit', async function(event) {
-      event.preventDefault();
-      
-      const formData = new FormData(this);
-      const jsonData = {};
-      formData.forEach((value, key) => {
-          jsonData[key] = value;
-      });
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="msgbtn">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="mt-4">
+          <div class="container">
+            <h2 class="text-center text-capitalize">
+              We Provide 360<sup>o</sup> virtual tour rental room
+            </h2>
+            <p class="text-center text-capitalize">
+              <strong
+                >Experience the Future of Room Rental with Our 360° Virtual
+                Tours in India</strong
+              >
+            </p>
+            <br />
+            <p>
+              Immerse yourself in the future of room rental with our innovative
+              360° virtual tours in India. At rentlt, we're revolutionizing the
+              way you explore and choose your next rental space. Our
+              cutting-edge technology allows you to virtually step into each
+              room, giving you a true-to-life experience from the comfort of
+              your home.
+            </p>
+            <br />
+            <p>
+              With our 360° virtual tours, you can explore every corner of the
+              room, getting a detailed view of the layout, size, and amenities.
+              Whether you're looking for a cozy studio apartment or a spacious
+              family home, our virtual tours provide an immersive experience
+              that helps you make an informed decision.
+            </p>
+            <br />
+            <p>
+              Forget about traditional property viewings that require you to
+              travel to each location. With our virtual tours, you can browse
+              through multiple properties in different locations without leaving
+              your couch. Save time and effort while finding the perfect room
+              for your needs.
+            </p>
+            <br />
+            <p>
+              Our platform offers a user-friendly interface that makes
+              navigating through virtual tours easy and intuitive. Simply select
+              a property, start the virtual tour, and explore at your own pace.
+              Zoom in to see details up close, move around to get a feel of the
+              space, and experience each room as if you were there in person.
+            </p>
+            <br />
+            <p>
+              At rentlt, we're committed to providing you with a seamless and
+              convenient room rental experience. Our 360° virtual tours in India
+              are just one of the many ways we're making room rental easier and
+              more accessible. Explore our virtual tours today and find your
+              next rental room with ease.
+            </p>
+          </div>
+        </section>
+      </main>
 
-      const response = await fetch('https://rent-lt-backend.vercel.app/api/sendMessage', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(jsonData)
-      });
-
-      if (response.ok) {
-          alert('Message sent successfully!');
-          document.getElementById('contactForm').reset();
-      } else {
-          alert('Failed to send message.');
+      <footer class="footer mt-5">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="about.html">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="services.html">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Register</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <p>&copy;2024 rentlt | All Rights Reserved</p>
+      </footer>
+    </div>
+    <script src="assets/senddata.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BW3BEXPBHR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-  });
-</script>
+      gtag("js", new Date());
+      gtag("config", "G-BW3BEXPBHR");
+    </script>
 
-  <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW3BEXPBHR"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-   gtag('config', 'G-BW3BEXPBHR');
-   </script>
-
-   <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "rentlt",
-  "alternateName": "virtual tour flat | rentlt",
-  "url": "https://rentlt.vercel.app/",
-  "logo": "",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "8340426515",
-    "contactType": "technical support",
-    "contactOption": "HearingImpairedSupported",
-    "areaServed": "IN",
-    "availableLanguage": "en"
-  },
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61557888538693",
-    "https://www.instagram.com/rent_lt?igsh=enU2aGM2MGdtdnBx"
-  ]
-}
-</script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="assets/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/3debac7129.js" crossorigin="anonymous"></script>
-
-
- 
-</body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "rentlt",
+        "alternateName": "virtual tour flat | rentlt",
+        "url": "https://rentlt.vercel.app/",
+        "logo": "",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "8340426515",
+          "contactType": "technical support",
+          "contactOption": "HearingImpairedSupported",
+          "areaServed": "IN",
+          "availableLanguage": "en"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61557888538693",
+          "https://www.instagram.com/rent_lt?igsh=enU2aGM2MGdtdnBx"
+        ]
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3debac7129.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
