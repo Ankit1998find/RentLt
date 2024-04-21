@@ -1,37 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://rentlt.vercel.app/</loc>
-  <lastmod>2024-03-10T09:09:05+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://rentlt.vercel.app/</loc>
+<lastmod>2024-03-10T09:09:05+00:00</lastmod>
+<priority>1.00</priority>
+<link rel="canonical" href="https://rentlt.vercel.app/" />
 </url>
 <url>
-  <loc>https://rentlt.vercel.app/index.html</loc>
-  <lastmod>2024-03-10T09:09:05+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://rentlt.vercel.app/index.html</loc>
+<lastmod>2024-03-10T09:09:05+00:00</lastmod>
+<priority>0.80</priority>
+<link rel="canonical" href="https://rentlt.vercel.app/" />
 </url>
 <url>
-  <loc>https://rentlt.vercel.app/about.html</loc>
-  <lastmod>2024-03-10T09:09:05+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://rentlt.vercel.app/about.html</loc>
+<lastmod>2024-03-10T09:09:05+00:00</lastmod>
+<priority>0.80</priority>
+<link rel="canonical" href="https://rentlt.vercel.app/about.html" />
 </url>
 <url>
-  <loc>https://rentlt.vercel.app/services.html</loc>
-  <lastmod>2024-03-10T09:09:05+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://rentlt.vercel.app/services.html</loc>
+<lastmod>2024-03-10T09:09:05+00:00</lastmod>
+<priority>0.80</priority>
+<link rel="canonical" href="https://rentlt.vercel.app/services.html" />
 </url>
 <url>
-  <loc>https://rentlt.vercel.app/contact.html</loc>
-  <lastmod>2024-03-10T09:09:05+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://rentlt.vercel.app/contact.html</loc>
+<lastmod>2024-03-10T09:09:05+00:00</lastmod>
+<priority>0.80</priority>
+<link rel="canonical" href="https://rentlt.vercel.app/contact.html" />
 </url>
-
-
 </urlset>
